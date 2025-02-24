@@ -1,3 +1,8 @@
+# 4.0.4
+
+- Remove debug printing when parsing CSI sequences
+- Support NO\_COLOR environment variable
+
 # 4.0.3
 
 Remove unused code and update dependencies.
