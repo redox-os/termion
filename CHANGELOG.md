@@ -1,3 +1,7 @@
+# 4.0.5
+
+- Add helpers to get terminal size from file descriptor
+
 # 4.0.4
 
 - Remove debug printing when parsing CSI sequences
