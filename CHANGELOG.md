@@ -1,3 +1,7 @@
+# 4.0.6
+
+- Drop Redox-specific code, now that it supports all libc functions
+
 # 4.0.5
 
 - Add helpers to get terminal size from file descriptor

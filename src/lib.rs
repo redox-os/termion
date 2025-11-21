@@ -15,16 +15,12 @@ extern crate numtoa;
 #[cfg(feature = "serde")]
 extern crate serde;
 
-#[cfg(target_os = "redox")]
-#[path = "sys/redox/mod.rs"]
-mod sys;
-
-#[cfg(all(unix, not(target_os = "redox")))]
+#[cfg(unix)]
 #[path = "sys/unix/mod.rs"]
 mod sys;
 
 pub use sys::size::terminal_size;
-#[cfg(all(unix, not(target_os = "redox")))]
+#[cfg(unix)]
 pub use sys::size::{terminal_size_fd, terminal_size_pixels, terminal_size_pixels_fd};
 pub use sys::tty::{get_tty, is_tty};
 
